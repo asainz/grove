@@ -297,6 +297,8 @@ function ensureExecutable(binary: string, message: string) {
 }
 
 function workboxCommand() {
+  if (process.env.GROVE_WKB_COMMAND) return process.env.GROVE_WKB_COMMAND
+
   const localBinary = join(
     dirname(fileURLToPath(import.meta.url)),
     'node_modules',
