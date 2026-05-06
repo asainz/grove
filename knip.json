@@ -1,0 +1,6 @@
+{
+	"$schema": "https://unpkg.com/knip@6/schema.json",
+	"entry": ["tests/**/*.ts"],
+	"ignoreDependencies": ["@alecrust/workbox"],
+	"project": ["**/*.ts"]
+}

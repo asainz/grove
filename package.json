@@ -1,20 +1,26 @@
 {
-  "name": "grove",
-  "version": "0.1.0",
-  "type": "module",
-  "bin": {
-    "grove": "./index.ts"
-  },
-  "scripts": {
-    "check": "tsc --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --types bun index.ts",
-    "test": "bun test",
-    "start": "bun index.ts"
-  },
-  "dependencies": {
-    "@alecrust/workbox": "github:AlecRust/workbox#v0.2.0"
-  },
-  "devDependencies": {
-    "@types/bun": "^1.3.2",
-    "typescript": "^5.9.3"
-  }
+	"name": "grove",
+	"version": "0.1.0",
+	"type": "module",
+	"bin": {
+		"grove": "./index.ts"
+	},
+	"scripts": {
+		"check": "bun run check:types && bun run check:knip && bun run check:code && bun run check:format",
+		"check:types": "tsc --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --types bun index.ts",
+		"check:knip": "knip",
+		"check:code": "biome lint .",
+		"check:format": "biome format .",
+		"test": "bun test",
+		"start": "bun index.ts"
+	},
+	"dependencies": {
+		"@alecrust/workbox": "github:AlecRust/workbox"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.14",
+		"@types/bun": "^1.3.2",
+		"knip": "^6.11.0",
+		"typescript": "^5.9.3"
+	}
 }
