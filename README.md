@@ -37,3 +37,9 @@ bun install
 bun run check
 bun test
 ```
+
+## Renovate
+
+Renovate runs daily through GitHub Actions and can also be started manually from the Actions tab.
+
+The workflow expects a repository secret named `RENOVATE_TOKEN`. Use a GitHub personal access token for a bot or maintainer account with repository access. Include the `workflow` scope if Renovate should update GitHub Actions workflow files.
