@@ -5,7 +5,7 @@
     "": {
       "name": "grove",
       "dependencies": {
-        "@alecrust/workbox": "github:AlecRust/workbox",
+        "@alecrust/workbox": "github:AlecRust/workbox#v0.3.1",
       },
       "devDependencies": {
         "@biomejs/biome": "^2.4.14",
@@ -16,7 +16,7 @@
     },
   },
   "packages": {
-    "@alecrust/workbox": ["@alecrust/workbox@github:AlecRust/workbox#77c9f25", { "dependencies": { "zod": "^4.4.1" }, "bin": { "workbox": "./src/cli.ts", "wkb": "./src/cli.ts" } }, "AlecRust-workbox-77c9f25", "sha512-Fb0FRnXYEmzAQRsy/Q69jTlaZogvIP5sob+L8epTmrZ2xNx39SoFdVSNjOqD5BrfgnGUNoq0IXyzyO8vvnb6rQ=="],
+    "@alecrust/workbox": ["@alecrust/workbox@github:AlecRust/workbox#19a8bd0", { "dependencies": { "zod": "^4.4.1" }, "bin": { "workbox": "./src/cli.ts", "wkb": "./src/cli.ts" } }, "AlecRust-workbox-19a8bd0", "sha512-H6+DCEm3DGMHCTFAjL3SkQPeoBmY7Eo6t9Oldh0AhUypr+euHSdzjC0A+iaFkc72Us06y4EHsN4/HvGmX3UN5Q=="],
 
     "@biomejs/biome": ["@biomejs/biome@2.4.14", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.4.14", "@biomejs/cli-darwin-x64": "2.4.14", "@biomejs/cli-linux-arm64": "2.4.14", "@biomejs/cli-linux-arm64-musl": "2.4.14", "@biomejs/cli-linux-x64": "2.4.14", "@biomejs/cli-linux-x64-musl": "2.4.14", "@biomejs/cli-win32-arm64": "2.4.14", "@biomejs/cli-win32-x64": "2.4.14" }, "bin": { "biome": "bin/biome" } }, "sha512-TmAvxOEgrpLypzVGJ8FulIZnlyA9TxrO1hyqYrCz9r+bwma9xXxuLA5IuYnj55XQneFx460KjRbx6SWGLkg3bQ=="],
 
