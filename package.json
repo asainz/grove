@@ -1,16 +1,47 @@
 {
-	"name": "grove",
+	"name": "codex-grove",
 	"version": "0.1.0",
+	"description": "Run Codex sessions in Workbox git worktrees.",
 	"type": "module",
+	"license": "MIT",
+	"author": "Andres Sainz de Aja <andressainz@gmail.com>",
+	"homepage": "https://github.com/asainz/grove#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/asainz/grove.git"
+	},
+	"bugs": {
+		"url": "https://github.com/asainz/grove/issues"
+	},
+	"keywords": [
+		"codex",
+		"cli",
+		"worktree",
+		"workbox",
+		"agent"
+	],
 	"bin": {
 		"grove": "./index.ts"
 	},
+	"files": [
+		"index.ts",
+		"README.md",
+		"LICENSE"
+	],
+	"engines": {
+		"bun": ">=1.3.0"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"packageManager": "bun@1.3.13",
 	"scripts": {
 		"check": "bun run check:types && bun run check:knip && bun run check:code && bun run check:format",
 		"check:types": "tsc --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --types bun index.ts",
 		"check:knip": "knip",
 		"check:code": "biome lint .",
 		"check:format": "biome format .",
+		"prepublishOnly": "bun run check && bun test",
 		"test": "bun test",
 		"start": "bun index.ts"
 	},
