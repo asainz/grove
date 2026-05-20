@@ -5,7 +5,7 @@
     "": {
       "name": "grove",
       "dependencies": {
-        "@alecrust/workbox": "github:AlecRust/workbox#v0.4.0",
+        "@alecrust/workbox": "github:AlecRust/workbox#v0.4.4",
       },
       "devDependencies": {
         "@biomejs/biome": "^2.4.14",
@@ -16,7 +16,7 @@
     },
   },
   "packages": {
-    "@alecrust/workbox": ["@alecrust/workbox@github:AlecRust/workbox#f5b4ca6", { "dependencies": { "zod": "^4.4.1" }, "bin": { "workbox": "./src/cli.ts", "wkb": "./src/cli.ts" } }, "AlecRust-workbox-f5b4ca6", "sha512-CaHWarN6J+qW4iID7XgdpIvBpk4eGwYio+Pz2Fvua5ZtNiFRYN3//vfeGDvUyxN4KIER7dW2dxpqqRf7EtYlkw=="],
+    "@alecrust/workbox": ["@alecrust/workbox@github:AlecRust/workbox#4ab1a51", { "dependencies": { "zod": "^4.4.3" }, "bin": { "workbox": "src/cli.ts", "wkb": "src/cli.ts" } }, "AlecRust-workbox-4ab1a51", "sha512-e5bHjQilJ5MFzxsa3ISc3rzod65fsfkBHTaxAqVKsH7tZOkzJMbDImNmsgrlnYiJsKn3npkWMQ/gmYL9pJ0Jug=="],
 
     "@biomejs/biome": ["@biomejs/biome@2.4.14", "", { "optionalDependencies": { "@biomejs/cli-darwin-arm64": "2.4.14", "@biomejs/cli-darwin-x64": "2.4.14", "@biomejs/cli-linux-arm64": "2.4.14", "@biomejs/cli-linux-arm64-musl": "2.4.14", "@biomejs/cli-linux-x64": "2.4.14", "@biomejs/cli-linux-x64-musl": "2.4.14", "@biomejs/cli-win32-arm64": "2.4.14", "@biomejs/cli-win32-x64": "2.4.14" }, "bin": { "biome": "bin/biome" } }, "sha512-TmAvxOEgrpLypzVGJ8FulIZnlyA9TxrO1hyqYrCz9r+bwma9xXxuLA5IuYnj55XQneFx460KjRbx6SWGLkg3bQ=="],
 
@@ -175,5 +175,7 @@
     "yaml": ["yaml@2.8.4", "", { "bin": { "yaml": "bin.mjs" } }, "sha512-ml/JPOj9fOQK8RNnWojA67GbZ0ApXAUlN2UQclwv2eVgTgn7O9gg9o7paZWKMp4g0H3nTLtS9LVzhkpOFIKzog=="],
 
     "zod": ["zod@4.4.1", "", {}, "sha512-a6ENMBBGZBsnlSebQ/eKCguSBeGKSf4O7BPnqVPmYGtpBYI7VSqoVqw+QcB7kPRjbqPwhYTpFbVj/RqNz/CT0Q=="],
+
+    "@alecrust/workbox/zod": ["zod@4.4.3", "", {}, "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ=="],
   }
 }
